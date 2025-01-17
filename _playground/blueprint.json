@@ -1,0 +1,47 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"landingPage": "/wp-admin/site-editor.php",
+	"preferredVersions": {
+		"php": "8.2",
+		"wp": "latest"
+	},
+	"login": true,
+	"steps": [
+		{
+			"step": "setSiteOptions",
+			"options": {
+				"blogname": "Arts & Crafts"
+			}
+		},
+		{
+			"step": "installTheme",
+			"themeZipFile": {
+				"resource": "wordpress.org/themes",
+				"url": "twentytwentyfive"
+			}
+		},
+		{
+			"step": "installTheme",
+			"themeZipFile": {
+				"resource": "url",
+				"url": "https://github-proxy.com/proxy/?repo=retrorism/arts-crafts"
+			}
+		},
+		{
+			"step": "mv",
+			"fromPath": "/wordpress/wp-content/themes/arts-crafts-main",
+			"toPath": "/wordpress/wp-content/themes/arts-crafts"
+		},
+		{
+			"step": "activateTheme",
+			"themeFolderName": "arts-crafts"
+		},
+		{
+			"step": "installPlugin",
+			"pluginZipFile": {
+				"resource": "wordpress.org/plugins",
+				"slug": "create-block-theme"
+			}
+		}
+	]
+}
