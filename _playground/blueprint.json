@@ -17,14 +17,16 @@
 			"step": "installTheme",
 			"themeZipFile": {
 				"resource": "wordpress.org/themes",
-				"url": "twentytwentyfive"
+				"url": "twentytwentyfive",
+				"targetFolder": "/wp-content/themes/"
 			}
 		},
 		{
 			"step": "installTheme",
 			"themeZipFile": {
 				"resource": "url",
-				"url": "https://github-proxy.com/proxy/?repo=retrorism/arts-crafts"
+				"url": "https://github-proxy.com/proxy/?repo=retrorism/arts-crafts",
+				"targetFolder": "/wp-content/themes/"
 			}
 		},
 		{
