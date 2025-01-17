@@ -2,14 +2,14 @@
 	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
 	"landingPage": "/wp-admin/site-editor.php",
 	"preferredVersions": {
-		"php": "8.2",
+		"php": "8.0",
 		"wp": "latest"
 	},
 	"login": true,
 	"steps": [
 		{
-            "step": "login"
-        },
+			"step": "login"
+		},
 		{
 			"step": "setSiteOptions",
 			"options": {
@@ -20,7 +20,7 @@
 			"step": "installTheme",
 			"themeData": {
 				"resource": "wordpress.org/themes",
-				"url": "twentytwentyfive"
+				"slug": "twentytwentyfive"
 			}
 		},
 		{
