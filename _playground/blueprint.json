@@ -8,6 +8,9 @@
 	"login": true,
 	"steps": [
 		{
+            "step": "login"
+        },
+		{
 			"step": "setSiteOptions",
 			"options": {
 				"blogname": "Arts & Crafts"
@@ -38,7 +41,7 @@
 		},
 		{
 			"step": "installPlugin",
-			"pluginZipFile": {
+			"pluginData": {
 				"resource": "wordpress.org/plugins",
 				"slug": "create-block-theme"
 			}
