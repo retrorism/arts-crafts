@@ -6,6 +6,10 @@
 		"wp": "latest"
 	},
 	"login": true,
+	"plugins": [
+		"create-block-theme",
+		"twentig"
+	],
 	"steps": [
 		{
 			"step": "login"
@@ -38,12 +42,6 @@
 		{
 			"step": "activateTheme",
 			"themeFolderName": "arts-crafts"
-		},
-		{
-			"plugins": [
-				"create-block-theme",
-				"twentig"
-			]
 		}
 	]
 }
