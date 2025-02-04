@@ -6,10 +6,6 @@
 		"wp": "latest"
 	},
 	"login": true,
-	"plugins": [
-		"create-block-theme",
-		"twentig"
-	],
 	"steps": [
 		{
 			"step": "login"
@@ -42,6 +38,26 @@
 		{
 			"step": "activateTheme",
 			"themeFolderName": "arts-crafts"
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "create-block-theme"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "twentig"
+			},
+			"options": {
+				"activate": true
+			}
 		}
 	]
 }
