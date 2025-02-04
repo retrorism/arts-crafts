@@ -58,6 +58,10 @@
 			"options": {
 				"activate": true
 			}
+		},
+		{
+			"step": "wp-cli",
+			"command": "wp patch update twentig-options portfolio true --format=json"
 		}
 	]
 }
