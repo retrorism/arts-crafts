@@ -13,3 +13,13 @@ Open in [WordPress Playground](https://playground.wordpress.net/?gh-ensure-auth=
 ## Theme dependencies
 
 - [Twenty Twenty-Five](https://wordpress.org/themes/twentytwentyfive)
+
+## Plugin dependencies
+
+- [Twentig](https://wordpress.org/plugins/twentig)
+
+### Development only
+
+- [Create Block Theme](https://wordpress.org/plugins/create-block-theme)
+
+
