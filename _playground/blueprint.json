@@ -61,7 +61,7 @@
 		},
 		{
 			"step": "wp-cli",
-			"command": "wp patch update twentig-options portfolio true --format=json"
+			"command": "wp option patch update twentig-options portfolio true --format=json"
 		}
 	]
 }
